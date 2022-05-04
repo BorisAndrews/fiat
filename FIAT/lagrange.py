@@ -107,5 +107,5 @@ class Lagrange(finite_element.CiarletElement):
     def __init__(self, ref_el, degree):
         poly_set = polynomial_set.ONPolynomialSet(ref_el, degree)
         dual = LagrangeDualSet(ref_el, degree)
-        formdegree = 0  # 0-form
+        formdegree = 1  # 1-form
         super(Lagrange, self).__init__(poly_set, dual, degree, formdegree)
